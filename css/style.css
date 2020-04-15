@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 98%;
+  margin: 10px auto;
+}
+
+header{
+  width: calc(100% - 2px);
+  height: 200px;
+  background: yellow;
+}
+
+main{
+  margin: 10px 0;
+  position: relative;
+
+}
+
+main::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+main .col {
+  float: left;
+}
+
+main .left{
+  background: pink;
+  width: calc(25% - 5px);
+  height: 30vh;
+}
+
+main .center{
+  width: calc(50% - 10px);
+  height: 64vh;
+  background: purple;
+  margin: 0 10px;
+}
+
+main .right{
+  background: pink;
+  width: calc(25% - 5px);
+  height: 30vh;
+
+}
+
+main .right .bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 25px;
+}
+
+
+footer{
+  width: calc(100% - 2px);
+  height: 10vh;
+  background: cyan;
+}
